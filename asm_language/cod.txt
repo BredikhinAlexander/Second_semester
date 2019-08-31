@@ -1,0 +1,28 @@
+main "":
+-----
+a hi_hi,
+a input,
+
+b hi_hi,
+b ::= 1,
+
+meow "a; b",
+
+b print.
+-----
+
+
+meow "a; b":
+-----
+if "a 0 :" b return,
+
+b ::= b * a,
+
+b ::= b - 1,
+
+meow "a; b".
+-----
+
+
+
+
